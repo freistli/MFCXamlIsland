@@ -75,6 +75,5 @@
     <ProjectReference Include="..\BaseApp\BaseApp.vcxproj" />
     <ProjectReference Include="..\MFCXamlIsland01\MFCXamlIsland01.vcxproj" />
   </ItemGroup>
-   
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
 </Project>
