@@ -215,14 +215,15 @@ void DesktopWindow::OnTakeFocusRequested(winrt::Windows::UI::Xaml::Hosting::Desk
     }
 }
 
-HWND DesktopWindow::CreateDesktopWindowsXamlSource(DWORD dwStyle, winrt::Windows::UI::Xaml::UIElement content)
+HWND DesktopWindow::CreateDesktopWindowsXamlSource(HWND window, DWORD dwStyle, winrt::Windows::UI::Xaml::UIElement content)
 {
     HRESULT hr = S_OK;
 	desktopSource = winrt::Windows::UI::Xaml::Hosting::DesktopWindowXamlSource();
-
+	
     auto interop = desktopSource.as<IDesktopWindowXamlSourceNative>();
     // Parent the DesktopWindowXamlSource object to current window
-    hr = interop->AttachToWindow(m_hMainWnd.get());
+	m_hMainWnd =wil::unique_hwnd( window );
+    hr = interop->AttachToWindow(window);
     winrt::check_hresult(hr);
 
     // Get the new child window's hwnd 

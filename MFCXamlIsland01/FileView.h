@@ -39,7 +39,7 @@ protected:
 	wil::unique_hwnd m_hWndXamlIsland = nullptr;
 	winrt::MyApp::MainUserControl m_mainUserControl = nullptr;
 	winrt::Windows::UI::Xaml::FrameworkElement::LayoutUpdated_revoker m_layoutUpdatedToken{};
-	winrt::Windows::UI::Xaml::Hosting::DesktopWindowXamlSource desktopSource;
+	//winrt::Windows::UI::Xaml::Hosting::DesktopWindowXamlSource desktopSource;
 protected:
 	void FillFileView();
 	int CreateXamlHost();

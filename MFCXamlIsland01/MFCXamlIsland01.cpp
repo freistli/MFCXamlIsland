@@ -122,9 +122,9 @@ BOOL CMFCXamlIsland01App::InitInstance()
 		return FALSE;
 	AddDocTemplate(pDocTemplate);
 
-	winrt::init_apartment(winrt::apartment_type::single_threaded);
-	windowsXamlManager = winrt::Windows::UI::Xaml::Hosting::WindowsXamlManager::InitializeForCurrentThread();
-
+	//winrt::init_apartment(winrt::apartment_type::single_threaded);
+	//windowsXamlManager = winrt::Windows::UI::Xaml::Hosting::WindowsXamlManager::InitializeForCurrentThread();
+	winrt::MyApp::App app;
 	
 	// create main MDI Frame window
 	CMainFrame* pMainFrame = new CMainFrame;

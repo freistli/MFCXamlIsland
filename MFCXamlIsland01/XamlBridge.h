@@ -38,7 +38,7 @@ private:
     winrt::Windows::UI::Xaml::Hosting::DesktopWindowXamlSource GetNextFocusedIsland(MSG* msg);
     bool NavigateFocus(MSG* msg);
 protected:
-    HWND CreateDesktopWindowsXamlSource(DWORD dwStyle, winrt::Windows::UI::Xaml::UIElement content);
+    HWND CreateDesktopWindowsXamlSource(HWND window, DWORD dwStyle, winrt::Windows::UI::Xaml::UIElement content);
     void ClearXamlIslands();
 
     HWND GetHandle() const

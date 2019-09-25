@@ -93,7 +93,7 @@ int CFileView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	// Fill in some static tree view data (dummy code, nothing magic here)
 	//FillFileView();
-	CreateXamlHost();
+	CreateXamlHostV2();
 		
 	return 0;
 }
@@ -103,7 +103,7 @@ void CFileView::OnSize(UINT nType, int cx, int cy)
 	CDockablePane::OnSize(nType, cx, cy);
 	AdjustLayout();
 }
-
+/*
 int CFileView::CreateXamlHost()
 {
 	//XAML Island section
@@ -157,12 +157,12 @@ int CFileView::CreateXamlHost()
 
 	return true;
 }
-
+*/
 void CFileView::CreateXamlHostV2()
 {	 
 
 	m_mainUserControl = winrt::MyApp::MainUserControl();
-	m_hWndXamlIsland = wil::unique_hwnd(CreateDesktopWindowsXamlSource(0 /*| WS_THICKFRAME*/, m_mainUserControl));
+	m_hWndXamlIsland = wil::unique_hwnd(CreateDesktopWindowsXamlSource(this->GetSafeHwnd(),0 /*| WS_THICKFRAME*/, m_mainUserControl));
 	m_layoutUpdatedToken = m_mainUserControl.LayoutUpdated(winrt::auto_revoke, { this, &CFileView::OnXamlLayoutUpdated });
 
 }
