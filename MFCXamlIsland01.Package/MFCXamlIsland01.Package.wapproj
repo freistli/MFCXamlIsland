@@ -72,7 +72,6 @@
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BaseApp\BaseApp.vcxproj" />
     <ProjectReference Include="..\MFCXamlIsland01\MFCXamlIsland01.vcxproj" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
