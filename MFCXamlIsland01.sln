@@ -4,12 +4,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCXamlIsland01", "MFCXamlIsland01\MFCXamlIsland01.vcxproj", "{06A00835-B3E4-4E4C-9B17-B4F319FA32FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4B7649D-C389-4F2C-B0B8-B55A08C8133F} = {C4B7649D-C389-4F2C-B0B8-B55A08C8133F}
+		{B6B66DBA-C720-4407-B490-6AE3FC2870FC} = {B6B66DBA-C720-4407-B490-6AE3FC2870FC}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyApp", "MyApp\MyApp.vcxproj", "{C4B7649D-C389-4F2C-B0B8-B55A08C8133F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleCppApp", "SampleCppApp\SampleCppApp.vcxproj", "{B8D25E17-F9FC-4DDC-A184-C28FD183DDD3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4B7649D-C389-4F2C-B0B8-B55A08C8133F} = {C4B7649D-C389-4F2C-B0B8-B55A08C8133F}
+		{B6B66DBA-C720-4407-B490-6AE3FC2870FC} = {B6B66DBA-C720-4407-B490-6AE3FC2870FC}
+	EndProjectSection
 EndProject
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "SampleCppApp.Package", "SampleCppApp.Package\SampleCppApp.Package.wapproj", "{C0FBAE1A-7950-4347-8DF8-0FA35AEAB5CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4B7649D-C389-4F2C-B0B8-B55A08C8133F} = {C4B7649D-C389-4F2C-B0B8-B55A08C8133F}
+		{B6B66DBA-C720-4407-B490-6AE3FC2870FC} = {B6B66DBA-C720-4407-B490-6AE3FC2870FC}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleUserControl", "SampleUserControl\SampleUserControl.vcxproj", "{B6B66DBA-C720-4407-B490-6AE3FC2870FC}"
 EndProject
