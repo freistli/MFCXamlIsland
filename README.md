@@ -17,6 +17,6 @@ Standard C++ Windows App. Can run with app.xbf and resource.pri without changing
 The dummy app for MFCXamlIsland01 app and SampleCPPApp
 
 ### SampleUserControl
-Windows Runtime Component, will be finally used by MFCXamlIsland01 app and SampleCPPApp. The component contains Microsoft::UI::Controls and Windows::UI::Controls. MFCXamlIsland01 still cannot use it at the moment.
+Windows Runtime Component, will be finally used by MFCXamlIsland01 app and SampleCPPApp. The component contains Microsoft::UI::Controls and Windows::UI::Controls. MFCXamlIsland01 can use it now.
 
 
