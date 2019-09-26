@@ -152,7 +152,7 @@ private:
                 m_parentLayout = false;
             });
 
-        winrt::Windows::Foundation::Size currentSize(10000, 10000);
+        winrt::Windows::Foundation::Size currentSize(5000, 5000);
         m_mainUserControl.Measure(currentSize);
         auto size = m_mainUserControl.DesiredSize();
 
