@@ -66,9 +66,6 @@
     <AppxManifest Include="$(SolutionDir)\bin\$(Platform)\$(Configuration)\$(AppProjectName)\AppxManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Button1.xaml" />
-  </ItemGroup>
-  <ItemGroup>
     <Manifest Include="Application.manifest">
       <Filter>Source Files</Filter>
     </Manifest>

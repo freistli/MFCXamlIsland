@@ -31,15 +31,15 @@
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
-    <EntryPointProjectUniqueName>..\SampleCppApp\SampleCppApp.vcxproj</EntryPointProjectUniqueName>
     <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
-    <PackageCertificateThumbprint>71E165FEBF46280B0AC777550DC048C4E70F6F68</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>B6BA1D0106AB01AAE7B1851333FE1A14936B21CC</PackageCertificateThumbprint>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundlePlatforms>x86</AppxBundlePlatforms>
     <AppInstallerUri>https://appconsultrealestate.z6.web.core.windows.net/</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <EntryPointProjectUniqueName>..\SampleCppApp\SampleCppApp.vcxproj</EntryPointProjectUniqueName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <AppxBundle>Always</AppxBundle>
@@ -59,9 +59,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SampleCppApp\SampleCppApp.vcxproj" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="..\MyApp\Images\*.png">
       <Link>Images\%(Filename)%(Extension)</Link>
     </Content>
@@ -74,6 +71,9 @@
       <TargetedSDKArchitecture>$(PlatformShortName)</TargetedSDKArchitecture>
       <Implicit>true</Implicit>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleCppApp\SampleCppApp.vcxproj" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
   <Target Name="_StompSourceProjectForWapProject" BeforeTargets="_ConvertItems">

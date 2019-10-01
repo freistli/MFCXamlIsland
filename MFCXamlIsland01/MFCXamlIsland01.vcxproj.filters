@@ -195,6 +195,7 @@
     <None Include="res\xamlreso.bin">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="Application.Manifest" />
@@ -203,6 +204,6 @@
     <AppxManifest Include="$(SolutionDir)\bin\$(Platform)\$(Configuration)\$(AppProjectName)\AppxManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="button1.xaml" />
+    <CopyFileToFolders Include="Models\Telescope.gltf" />
   </ItemGroup>
 </Project>

@@ -272,6 +272,13 @@
     <Image Include="res\userimages.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <CopyFileToFolders Include="Models\Telescope.gltf">
+      <DeploymentContent>true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
+    </CopyFileToFolders>
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="res\MFCXamlIsland01.rc2" />
     <None Include="res\xamlreso.bin" />
@@ -292,6 +299,10 @@
       <DeploymentContent>true</DeploymentContent>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </NativeReferenceFile>
+    <NativeReferenceFile Include="$(SolutionDir)\packages\SceneLoaderComponent.1.0.0.1\runtimes\win10-x64\native\SceneLoaderComponent.dll">
+      <DeploymentContent>true</DeploymentContent>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </NativeReferenceFile>
     <NativeReferenceFile Include="$(SolutionDir)\bin\$(Platform)\$(Configuration)\$(AppProjectName)\*.xbf">
       <DeploymentContent>true</DeploymentContent>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -304,9 +315,6 @@
       <DeploymentContent>true</DeploymentContent>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </NativeReferenceFile>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="button1.xaml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
