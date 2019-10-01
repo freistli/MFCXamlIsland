@@ -4,7 +4,8 @@
 
 Is the MFC MDI app with XamlIsland. It loaded Windows::UI::Controls and WinUI 2.2 (Windows::UI::Controls) through Windows Runtime Component.
 
-![4](https://github.com/freistli/images/blob/master/MFCXamlIsland/4.png)
+![5](https://github.com/freistli/images/blob/master/MFCXamlIsland/5.gif)
+ 
 
 It follows Oscar's [guide](https://github.com/marb2000/XamlIslands/tree/master/1903_Samples/CppWinRT_Win32_SingleIsland)  to copy xbf, dll, pri files from MyApp and Winows Runtime Components. And also can be built successfully with WinUI components.
 
